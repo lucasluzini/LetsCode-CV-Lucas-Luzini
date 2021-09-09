@@ -7,18 +7,40 @@
         <title>CV Lucas Luzini</title>
     </head>
     <body>
-        <h3>Fale Comigo</h3>
-        <form action=".\actions\pagina-processa-dados-do-form" method="post">
+        <h1>Fale Comigo</h1>
+
+        <p>Av Bela Qd Apt Cond Aparecida de Goiania - GO</p>
+        <p>(62)9.9999-0000</p>
+        <p>lucasluzini@hotmail.com</p>
+
+        <hr>
+
+        <form 
+            action="mailto:lucasluzini@hotmail.com" 
+            method="POST"
+            enctype="text/plain"
+        >
             <p><label for="nome">Nome:</label>
-            <input type="text" id="nome" name="usuario_nome" /></p>
+            <input type="text" id="nome" name="Nome" /></p>
 
-            <p><label for="telefone" >Telefone:</label>
-            <input type="telefone" id="email" name="usuario_telefone" /></p>
+            <p><label for="E-Mail" >E-Mail:</label>
+            <input type="E-Mail" id="email" name="E-mail" /></p>
 
-            <p><label for="msg">Mensagem:</label>
-            <textarea id="msg" name="usuario_msg"></textarea></p>
+            <p></p><label for="msg">Mensagem:</label><br/>
+            <textarea id="msg" name="Mensagem" style="width:300px;min-height:200px;"></textarea></p>
+            <input type="submit"></input>
+        </form>
 
-            <p><button type="submit">Enviar sua mensagem</button></p>
+        <br/><br/>
+
+        <form action=".\actions\processa-arquivo" method="post">
+            <input type="text" id="nome2" name="usuario_nome2" /><br/>
+            <button type="submit">Enviar</button><br/>
+            <button>Escolher arquivo</button><label>Nenhum arquivo selecionado</label><br/>
+            <input type="date" /><br/>
+            <input type="radio" /><br/>
+            <input type="range" /><br/>
+            
         </form>
         <p><a href="..\index.html">Home</a></p>
     </body>
